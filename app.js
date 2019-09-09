@@ -153,14 +153,14 @@ function removeHistoryRecord(recordName) {
  * @param {*} data              Record entry.
  */
 function createHistoryRecords(data) {
-	const record = createNode('div');
+	const record = createNode('dd');
 	record.classList.add('record');
 	record.innerHTML = `
-			<div class="record-value">${data.value}</div>
-			<div class="record-time">
-				${data.time}
-				<span class="clear-action delete-button" onclick="removeHistoryRecord('${data.value}')"><span>
-			</div>
+			<span class="record-value">${data.value}</span>
+			<span class="record-time">
+				<time datetime="${data.time}">${data.time}</time>
+				<button aria-label="delete" class="clear-action delete-button" onclick="removeHistoryRecord('${data.value}')"></button>
+			</span>
 
 			
 	`;

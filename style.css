@@ -75,12 +75,26 @@ li:hover {
 .title {
 	flex: 1;
 	font-size: 18px;
+	text-align: center;
+	padding: 20px 10px;
+}
+
+.search-history-title{
+	flex: 1;
+	font-size: 18px;
+}
+
+.search-label{
+	font-size: 15px;
+    font-family: arial;
 }
 
 .clear-action {
 	font-size: 12px;
 	color: gray;
 	cursor: pointer;
+	background: transparent;
+    border: none;
 }
 
 .record {
