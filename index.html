@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> 
+</head>
+
+<body>
+    <!-- Search Section -->
+    <div class="search-wrapper"> 
+        <div class="title-wrapper"> 
+            <span class="title">Custom Search </span>
+        </div>
+        <input type="search" id="search-text"  placeholder="Search Country" name="searchText"  />
+        <ul id="autocomplete-container" onclick="selectSearchResult(event)"></ul>
+        
+        <!-- No Suggestions text appears when no results are found -->
+        <div id="no-suggestions-section" >No Suggestions found!</div>
+    </div>
+    <!--  -->
+    
+    
+    <!-- Search History Section -->
+    <div class="search-history-wrapper">
+        <div class="title-wrapper">
+            <span class="title">Search History</span>
+            <span class="clear-action" onclick="clearAllHistory()">Clear all history</span>
+        </div>
+        <div id="history-records"></div>
+    </div>
+    <!--  -->
+
+</body>
+<script src="app.js"></script>
+</html>

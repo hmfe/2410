@@ -1,0 +1,120 @@
+body {
+	padding: 5%;
+	font-family: "Arial";
+}
+
+.search-wrapper {
+	width: 70vw;
+}
+
+.search-title {
+	font-size: 24px;
+	margin: 10px 2px;
+}
+
+.search-wrapper input[type=search] {
+	font-size: 18px;
+	padding: 10px;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid gray;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: lightgray;
+	opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: lightgray;
+}
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: lightgray;
+}
+
+ul {
+	position: absolute;
+	background: white;
+	list-style: none;
+	width: 70vw;
+	margin: 0;
+	padding: 0;
+	border: 1px solid rebeccapurple;
+	max-height: 50vh; 
+	overflow-y: scroll;
+}
+
+li {
+	padding: 8px;
+	margin: 5px;
+}
+
+li:hover {
+	background: #d2d2d2;
+}
+
+#no-suggestions-section {
+	display: none;
+	padding: 10px 0px;
+	font-style: italic;
+	color: gray;
+}
+
+.search-history-wrapper {
+	margin: 50px 0px;
+	width: 100%;
+}
+
+.title-wrapper {
+	display: flex;
+	width: 80%;
+}
+
+.title {
+	flex: 1;
+	font-size: 18px;
+}
+
+.clear-action {
+	font-size: 12px;
+	color: gray;
+	cursor: pointer;
+}
+
+.record {
+	display: flex;
+	width: 80%;
+	margin: 18px 0px;
+	border-bottom: 1px solid gray;
+	padding: 10px 0px;
+}
+
+.record-value {
+	flex: 1;
+	min-width: 180px;
+}
+.record-time {
+	color: gray;
+	font-size: 14px;
+	min-width: 180px;
+}
+
+.delete-button:after {
+	content: '\2715';
+	margin-left: 20px;
+}
+/* nth-child(even) */
+
+@media only screen  and (max-width: 320px) {
+	.record {
+		overflow: scroll;
+	}
+
+}
+
+
+
+
+
