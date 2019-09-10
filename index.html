@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Custom Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="title-wrapper">
+            <span class="title">Custom Search </span>
+        </div>
+    </header>
+    <!-- Search Section -->
+    <main>
+        <section role="search" class="search-wrapper">
+            <input type="search" id="search-text" placeholder="Enter keyword to search country" name="searchText" />
+            <ul id="autocomplete-container" onclick="selectSearchResult(event)"></ul>
+
+            <!-- No Suggestions text appears when no results are found -->
+            <blockquote id="no-suggestions-section">No Suggestions found!</blockquote>
+        </section>
+        <!--  -->
+
+
+        <!-- Search History Section -->
+        <section role="search-history" class="search-history-wrapper">
+            <hgroup class="title-wrapper">
+                <h2 class="search-history-title">Search History</h2>
+                <h4 class="clear-action" onclick="clearAllHistory()">Clear all history</h4>
+            </hgroup>
+            <dl id="history-records"></dl>
+        </section>
+        <!--  -->
+    </main>
+</body>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,23 @@
+/* Name: delete-button.css */
+/* Author: Juhi Singh */
+.delete {
+	background-color: orange;
+	font-weight: bold;
+	padding: 25px 15px;
+	border: 2px solid gray;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.delete:after {
+	content: '\2715';
+	padding: 15px 20px;
+	background: white;
+	border: 15px;
+	border-radius: 50%;
+	font-size: 30px;
+}
+
+.delete:hover {
+	box-shadow: 1px 1px gray;
+}
